@@ -1,23 +1,6 @@
 #!/usr/bin/python3
-'''
-def pow(a, b):
-    # this would hold the result of the multiplication
-    result = 1
-    base = 1
-    nb = 0
-    # multiply a by b times
-    if b < 0:
-        nb = b
-        b = (-1) * b
 
-    for i in range(b):
-        result *= a
-        base = result * result
 
-    if nb < 0:
-        result /= base
-        return result
-'''
 def pow(a, b):
     """Return a to the power of b."""
     return (a ** b)
