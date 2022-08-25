@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+'''
 def pow(a, b):
     # this would hold the result of the multiplication
     result = 1
@@ -17,3 +17,7 @@ def pow(a, b):
     if nb < 0:
         result /= base
         return result
+'''
+def pow(a, b):
+    """Return a to the power of b."""
+    return (a ** b)
