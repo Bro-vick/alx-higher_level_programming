@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
-"""unittests for max_integer([..])."""
+"""Unittests for max_integer([..])."""
 
 import unittest
 max_integer = __import__('6-max_integer').max_integer
+
 
 class TestMaxInteger(unittest.TestCase):
     """Define unittests for max_integer([..])."""
@@ -21,7 +22,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_at_begginning(self):
         """Test a list with a beginning max value."""
         max_at_beginning = [4, 3, 2, 1]
-        self.assertEqual(max_integer(max_at_beginning, 4)
+        self.assertEqual(max_integer(max_at_beginning), 4)
 
     def test_empty_list(self):
         """Test an empty list."""
@@ -45,12 +46,12 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_string(self):
         """Test a string."""
-        string = "George"
+        string = "Brennan"
         self.assertEqual(max_integer(string), 'r')
 
     def test_list_of_strings(self):
         """Test a list of strings."""
-        strings = ["George", "is", "my", "name"]
+        strings = ["Brennan", "is", "my", "name"]
         self.assertEqual(max_integer(strings), "name")
 
     def test_empty_string(self):
