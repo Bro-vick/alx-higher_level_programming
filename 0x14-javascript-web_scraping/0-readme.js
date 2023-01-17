@@ -1,11 +1,10 @@
 #!/usr/bin/node
-const file = process.argv[2];
+// script reads and prints the contents of a file
+
 const fs = require('fs');
+const file = process.argv[2];
 
 fs.readFile(file, 'utf-8', function (err, data) {
-	if (err) {
-		console.log(err);
-		return;
-	}
-	console.log(data);
+  if (err) throw err;
+  console.log(data);
 });
